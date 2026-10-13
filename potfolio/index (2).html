@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khadidja — Data Analyst</title>
+<meta name="description" content="Data Analyst and AI engineering student. Dashboards, SQL, Python and machine learning for healthcare data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- defer = le JS s'exécute après le chargement du HTML : plus fiable -->
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a class="logo" href="#top">Khadidja<span>.</span></a>
+    <ul>
+      <li><a href="#skills">What I do</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a class="cta" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="badge"><i></i>Open to data analyst roles</span>
+      <h1>I turn raw data into <span class="grad">decisions.</span></h1>
+      <p>Data Analyst and AI engineering student at ENSTA Alger. I build dashboards, SQL reports and machine learning models, with a focus on healthcare data.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+    </div>
+
+    <!-- Les chiffres sont déjà écrits ici : si le JS ne marche pas, ils restent corrects -->
+    <div class="dash" aria-label="Key numbers from my projects">
+      <div class="dash-top"><i></i><i></i><i></i><span>portfolio.dashboard</span></div>
+      <div class="kpis">
+        <div class="kpi"><b data-count="5">5</b><span>projects built</span></div>
+        <div class="kpi"><b data-count="99.69" data-dec="2" data-suffix="%">99.69%</b><span>OCT model accuracy</span></div>
+        <div class="kpi"><b data-count="7000" data-suffix="+">7,000+</b><span>customers analysed</span></div>
+        <div class="kpi"><b data-count="900" data-suffix="+">900+</b><span>patient records</span></div>
+      </div>
+      <div class="chart">
+        <h4>Projects by domain</h4>
+        <div class="bar"><span>Healthcare</span><div class="track"><i class="fill" style="--w:100%"></i></div><b>4</b></div>
+        <div class="bar"><span>Dashboards</span><div class="track"><i class="fill" style="--w:75%"></i></div><b>3</b></div>
+        <div class="bar"><span>Machine learning</span><div class="track"><i class="fill" style="--w:50%"></i></div><b>2</b></div>
+      </div>
+      <svg class="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 58 C30 52 45 20 80 30 S130 62 165 40 S220 8 255 22 S290 12 300 6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- Bande d'outils (le contenu est répété 2 fois pour une boucle sans coupure) -->
+<div class="marquee" aria-hidden="true">
+  <div>
+    <span>Python</span><span>SQL</span><span>Power BI</span><span>Excel</span><span>Streamlit</span><span>Scikit-learn</span><span>PyTorch</span><span>DAX</span>
+    <span>Python</span><span>SQL</span><span>Power BI</span><span>Excel</span><span>Streamlit</span><span>Scikit-learn</span><span>PyTorch</span><span>DAX</span>
+  </div>
+</div>
+
+<!-- SKILLS : le travail d'un data analyst en 4 étapes -->
+<section id="skills">
+  <div class="wrap">
+    <span class="eyebrow">What I do</span>
+    <h2>What a data analyst does, and how I do it</h2>
+    <p class="lead">Companies collect lots of data but need someone to make sense of it. Here are the four steps of the job, with the tools I use for each.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>Collect</h3>
+        <p>Get data out of databases and files.</p>
+        <div class="tags"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Excel</span></div>
+      </div>
+      <div class="step">
+        <h3>Clean</h3>
+        <p>Fix errors, duplicates and missing values.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span></div>
+      </div>
+      <div class="step">
+        <h3>Analyse</h3>
+        <p>Find trends, patterns and risks.</p>
+        <div class="tags"><span class="tag">Statistics</span><span class="tag">Scikit-learn</span><span class="tag">PyTorch</span></div>
+      </div>
+      <div class="step">
+        <h3>Visualise</h3>
+        <p>Show the answer in a clear dashboard.</p>
+        <div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Streamlit</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section id="projects" class="projects-bg">
+  <div class="wrap">
+    <span class="eyebrow">Selected work</span>
+    <h2>Projects</h2>
+    <p class="lead">Five projects, from dashboards to a deep learning model. Use the filters to explore.</p>
+
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" class="active" data-filter="all">All</button>
+      <button type="button" data-filter="health">Healthcare</button>
+      <button type="button" data-filter="dashboard">Dashboards</button>
+      <button type="button" data-filter="ml">Machine learning</button>
+    </div>
+
+    <div class="grid">
+      <!-- Chaque projet = un <article>. data-cat = catégories utilisées par les filtres -->
+      <article class="project" data-cat="health ml">
+        <div class="kind">Healthcare · Deep learning</div>
+        <h3>OCT Retinal Classification</h3>
+        <div class="big">99.69%</div>
+        <p>A deep learning model that sorts retinal scans into 4 categories: Normal, CNV, DME and Drusen. Tested on independent patients.</p>
+        <ul><li>3 binary models in a cascade (EfficientNet-B0)</li><li>Decision thresholds tuned to limit missed cases</li></ul>
+        <div class="tags"><span class="tag">PyTorch</span><span class="tag">Python</span><span class="tag">Kaggle</span></div>
+      </article>
+
+      <article class="project" data-cat="health dashboard">
+        <div class="kind">Healthcare · Database</div>
+        <h3>Hospital &amp; Pharmacy System</h3>
+        <div class="big">SQL + Streamlit</div>
+        <p>A database and dashboard for patients, appointments and drug stock.</p>
+        <ul><li>Relational schema designed from scratch</li><li>Expiry-date alerts and role-based access</li></ul>
+        <div class="tags"><span class="tag">MySQL</span><span class="tag">Streamlit</span></div>
+      </article>
+
+      <article class="project" data-cat="health ml dashboard">
+        <div class="kind">Healthcare · Statistics</div>
+        <h3>Heart Disease Risk</h3>
+        <div class="big">900+ patients</div>
+        <p>Which factors predict heart disease? Correlations, statistical tests and a classification model.</p>
+        <ul><li>Feature importance chart for easy reading</li></ul>
+        <div class="tags"><span class="tag">Scikit-learn</span><span class="tag">Streamlit</span></div>
+        <a class="link" href="https://heartdiseasedashboard-sdqftyhc4finz9crejudpn.streamlit.app/" target="_blank" rel="noopener">Open the live app →</a>
+      </article>
+
+      <article class="project" data-cat="dashboard">
+        <div class="kind">Business · Dashboard</div>
+        <h3>Telco Customer Churn</h3>
+        <div class="big">7,000+ customers</div>
+        <p>A 2-page Power BI report showing why customers leave, by contract, tenure and services.</p>
+        <ul><li>DAX measures for churn rate and revenue impact</li></ul>
+        <div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span></div>
+      </article>
+
+      <article class="project" data-cat="health">
+        <div class="kind">Healthcare · Web app</div>
+        <h3>LASIK Safety Calculator</h3>
+        <div class="big">Go / No-go</div>
+        <p>A web app that checks eye-surgery eligibility from biometric data. Rules validated by an ophthalmologist.</p>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <a class="link" href="https://clarity-ai-vision.vercel.app/" target="_blank" rel="noopener">Open the live app →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <span class="eyebrow">About</span>
+      <h2>About me</h2>
+      <p>I am a first-year AI Engineering student at ENSTA Alger, based in Algeria. I like data work that has a real-world impact, especially in medicine.</p>
+      <p>I have worked as a data analyst intern at Ramy Food Company and on event data at ScanEvent.</p>
+    </div>
+    <div class="facts">
+      <h3>Tools I use</h3>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Excel</span>
+        <span class="tag">Streamlit</span><span class="tag">Scikit-learn</span><span class="tag">PyTorch</span><span class="tag">GitHub</span><span class="tag">Linux</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Let's work together</h2>
+      <p>Open to data analyst roles and internships.</p>
+      <!-- Remplace par ton vrai email et ton vrai LinkedIn -->
+      <a class="btn primary" href="mailto:ton.email@example.com">Send an email</a>
+      <a class="btn ghost" href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>© 2026 Khadidja</footer>
+
+</body>
+</html>
